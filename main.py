@@ -98,7 +98,6 @@ def apply_cal(netw, netw2, a11, a12, a21, alpha, beta):
 
     return rf.Network(s=S, frequency=netw.frequency)
 
-
 def apply_cal_partial(netw, a11, a12, a21, alpha, beta, S12=None, S22=None):    
     '''
     Apply the calibration to the network netw using the error terms under partial condition.
@@ -193,6 +192,7 @@ if __name__ == "__main__":
     cal_dut_par2.s11.plot_s_db(label='Partial cal, S22=0, S12=S21', linestyle='-.')
     cal_dut_par3.s11.plot_s_db(label='Partial cal, S22=S11, S12=S21', linestyle=':')
     plt.title('Calibrated S11')
+    plt.ylabel('Magnitude (dB)')
     plt.legend()
 
     plt.figure()
@@ -201,6 +201,7 @@ if __name__ == "__main__":
     cal_dut_par2.s21.plot_s_db(label='Partial cal, S22=0, S12=S21', linestyle='-.')
     cal_dut_par3.s21.plot_s_db(label='Partial cal, S22=S11, S12=S21', linestyle=':')
     plt.title('Calibrated S21')
+    plt.ylabel('Magnitude (dB)')
     plt.legend()
 
     plt.show()

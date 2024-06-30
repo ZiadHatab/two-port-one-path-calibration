@@ -1,6 +1,6 @@
 # Two-port/One-path Calibration
 
-The purpose of this repository is to support the tutorial I wrote on two-port/one-path calibration: [https://ziadhatab.github.io/posts/two-port-one-path-calibration/](https://ziadhatab.github.io/posts/two-port-one-path-calibration/).
+This repository is to support the tutorial I wrote on two-port/one-path calibration: [https://ziadhatab.github.io/posts/two-port-one-path-calibration/](https://ziadhatab.github.io/posts/two-port-one-path-calibration/).
 
 The general problem at hand is a VNA system that can only measure S11 and S21, and the goal is to retrieve the calibrated response of a two-port device using this system.
 
